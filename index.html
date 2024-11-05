@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change | La couleur de fond</title>
+</head>
+ <body>
+    <div class="select">
+        <select name="" id="fond" onchange="changing()">
+            <option value="">Choisissez une couleur de fond</option>
+            <option value="white">Blanc</option>
+            <option value="black">Noir</option>
+            <option value="yellow">Jaune</option>
+            <option value="yellowgreen">Jaune-Vert</option>
+            <option value="green">Vert</option>
+            <option value="purple">Purple</option>
+            <option value="indigo">Indigo</option>
+            <option value="maroon">Marron</option>
+            <option value="blue">Blue</option>
+            <option value="red">Rouge</option>
+            <option value="fuchsia">Rose</option>
+            <option value="forestgreen">Vert Fleural</option>
+        </select>
+        <select name="" id="couleur" onchange="coloriage()">
+            <option value="">Choisissez une couleur d'écriture</option>
+            <option value="black">Noir</option>
+            <option value="red">Rouge</option>
+            <option value="yellow">Jaune</option>
+            <option value="blue">Blue</option>
+            <option value="maroon">Marron</option>
+            <option value="indigo">Indigo</option>
+            <option value="white">Blanc</option>
+            <option value="green">Vert</option>
+            <option value="yellowgreen">Jaune-Vert</option>
+            <option value="purple">Purple</option>
+            <option value="gray">Gris</option>
+        </select>
+        <select name="" id="taille" onchange="modiftaille()">
+            <option value="">Prennez une taille d'écriture</option>
+            <option value="10px">10px</option>
+            <option value="14px">14px</option>
+            <option value="18px">18px</option>
+            <option value="20px">20px</option>
+            <option value="22px">22px</option>
+            <option value="24px">24px</option>
+            <option value="28px">28px</option>
+            <option value="30px">30px</option>
+            <option value="31px">31px</option>
+            <option value="34px">34px</option>
+        </select>
+        <select name="" id="blog" onchange="boite()">
+            <option value="block">block</option>
+            <option value="flex">flex</option>
+            <option value="none">none</option>
+            <option value="inline">inline</option>
+            <option value="inline-block">inline-block</option>
+        </select>
+        <select name="" id="poid" onchange="poidsEcrit()">
+            <option value="">Choisit un poids de l'écriture</option>
+            <option value="100">100</option>
+            <option value="200">200</option>
+            <option value="300">300</option>
+            <option value="400">400</option>
+            <option value="500">500</option>
+            <option value="600">600</option>
+            <option value="700">700</option>
+            <option value="800">800</option>
+            <option value="900">900</option>
+            <option value="bold">Bold</option>
+            <option value="bolder">Bolder</option>
+            <option value="lighter">Lighter</option>
+        </select>
+        <select name="" id="famille" onchange="FamillyWrite()">
+            <option value="">Prennez un font-family</option>
+            <option value="'Courier New', Courier, monospace">Premier</option>
+            <option value="'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Deuxième</option>
+            <option value="'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">Troisième</option>
+            <option value="'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">Quatrième</option>
+            <option value="'Times New Roman', Times, serif">Cinquième</option>
+            <option value="'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">Sixième</option>
+            <option value="Arial, Helvetica, sans-serif">Septième</option>
+            <option value="Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">Huitième</option>
+            <option value="Verdana, Geneva, Tahoma, sans-serif">Neuvième</option>
+        </select>
+        <select name="" id="stylet" onchange="styleWrite()">
+            <option value="">Select a font-style</option>
+            <option value="oblique">Oblique</option>
+            <option value="normal">Normal</option>
+            <option value="italic">Italic</option>
+            <option value="inherit">Hérité</option>
+        </select>
+        <br>
+    </div>
+    <div id="text">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores deserunt pariatur eveniet modi soluta, atque fugiat consequatur error officia expedita molestiae aliquam facere. Maiores neque sint laudantium? Eligendi, ipsam tenetur.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum fuga odio sed inventore error ad sequi quam unde suscipit debitis aspernatur adipisci deleniti repellat labore incidunt, distinctio corporis exercitationem magnam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, vel minima quisquam, repudiandae atque similique quis commodi omnis dolores exercitationem numquam iure neque ipsam natus recusandae provident, cum saepe veniam.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi magnam dolorum blanditiis aperiam natus quod quia est delectus. Ipsam reprehenderit harum voluptates aut, cum reiciendis optio provident minima pariatur facilis.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta illum explicabo accusamus facilis reprehenderit nemo quod asperiores, praesentium atque minus veniam aliquam, dolorem ea debitis ex delectus nihil necessitatibus excepturi!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, qui in incidunt earum aliquam fugit reprehenderit quia quidem saepe cumque assumenda distinctio dolor praesentium nam ipsam molestias alias! Accusantium, sunt!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores dicta laborum totam dignissimos reiciendis repudiandae quod eaque eos fugit officiis, nobis fugiat maxime, voluptate sunt illo non aliquid praesentium minima!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus pariatur assumenda quasi consectetur vitae tempora numquam! Unde fuga odio optio laborum incidunt voluptates? Veritatis quis perferendis accusamus nihil maiores? Quod?</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores deserunt pariatur eveniet modi soluta, atque fugiat consequatur error officia expedita molestiae aliquam facere. Maiores neque sint laudantium? Eligendi, ipsam tenetur.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum fuga odio sed inventore error ad sequi quam unde suscipit debitis aspernatur adipisci deleniti repellat labore incidunt, distinctio corporis exercitationem magnam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, vel minima quisquam, repudiandae atque similique quis commodi omnis dolores exercitationem numquam iure neque ipsam natus recusandae provident, cum saepe veniam.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi magnam dolorum blanditiis aperiam natus quod quia est delectus. Ipsam reprehenderit harum voluptates aut, cum reiciendis optio provident minima pariatur facilis.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta illum explicabo accusamus facilis reprehenderit nemo quod asperiores, praesentium atque minus veniam aliquam, dolorem ea debitis ex delectus nihil necessitatibus excepturi!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, qui in incidunt earum aliquam fugit reprehenderit quia quidem saepe cumque assumenda distinctio dolor praesentium nam ipsam molestias alias! Accusantium, sunt!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores dicta laborum totam dignissimos reiciendis repudiandae quod eaque eos fugit officiis, nobis fugiat maxime, voluptate sunt illo non aliquid praesentium minima!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus pariatur assumenda quasi consectetur vitae tempora numquam! Unde fuga odio optio laborum incidunt voluptates? Veritatis quis perferendis accusamus nihil maiores? Quod?</p> 
+    </div>
+    <script>
+        function changing(){
+            let fond=document.getElementById("fond").value;
+            document.body.style.backgroundColor=fond;
+            document.select.style.backgroundColor=fond;
+        }
+        function coloriage(){
+            let couleur=document.getElementById("couleur").value;
+            document.body.style.color=couleur;
+        }
+        function modiftaille(){
+            let tail=document.getElementById("taille").value;
+            document.body.style.fontSize=tail;
+        }
+        function boite(){
+            let disp=document.getElementById("blog").value;
+            document.body.style.display=disp;
+        }
+        function poidsEcrit(){
+            let ecriturePoids=document.getElementById("poid").value;
+            document.body.style.fontWeight=ecriturePoids;
+        }
+        function FamillyWrite(){
+            let optfam=document.getElementById("famille").value;
+            document.body.style.fontFamily=optfam;
+        }
+        function styleWrite(){
+            let fontwriten=document.getElementById("stylet").value;
+            document.body.style.fontStyle=fontwriten;
+        }
+    </script>
+</body>
+</html>
